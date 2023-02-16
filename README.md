@@ -1,6 +1,5 @@
 # dotpather
 
-[![Build Status](http://img.shields.io/travis/jarofghosts/dotpather.svg?style=flat-square)](https://travis-ci.org/jarofghosts/dotpather)
 [![npm install](http://img.shields.io/npm/dm/dotpather.svg?style=flat-square)](https://www.npmjs.org/package/dotpather)
 [![npm version](https://img.shields.io/npm/v/dotpather.svg?style=flat-square)](https://www.npmjs.org/package/dotpather)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
