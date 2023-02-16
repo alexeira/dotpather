@@ -3,10 +3,10 @@ export default function dotpath(str: string) {
   const len = parts.length
 
   type ObjectWithPath = {
-    [key: string]: any
+    [key: string]: unknown
   }
 
-  return function parse(obj: ObjectWithPath) {
+  return function parse(obj: unknown): ObjectWithPath | undefined {
     let testKey
 
     for (let i = 0; i < len; ++i) {
@@ -14,9 +14,9 @@ export default function dotpath(str: string) {
 
       if (!obj) return
 
-      obj = obj[testKey]
+      obj = (obj as ObjectWithPath)[testKey]
     }
 
-    return obj
+    return obj as ObjectWithPath
   }
 }
